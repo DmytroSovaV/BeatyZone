@@ -1,0 +1,103 @@
+.section-procedures{
+    text-align: center;
+    margin-top: 50px;
+&__title{
+    font-size: 32x; 
+    margin: 0 auto 48px;
+    font-weight: 500;
+    @media screen and (min-width:$bp-tablet) {
+        font-weight: 700;
+        font-size: 64px;
+    }
+}
+&__items{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    position: relative;
+}
+&__item{
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+&__item::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+    max-height: 446px;
+    @media screen and (min-width:$bp-tablet) {
+            max-width: 344px;
+            max-height: 456px;
+    
+        }
+    border-radius:4px 120px ;
+    background-image: linear-gradient(rgba(1, 28, 68, 0), rgba(1, 28, 68, 0.73), rgb(1, 28, 68));
+    pointer-events: none;
+}
+&__item img{
+    width: 100%;
+    max-width: 320px;
+    max-height: 446px;
+    @media screen and (min-width:$bp-tablet) {
+        max-width: 344px;
+        max-height: 456px;
+        
+    }
+    display: block;
+    border-radius: 20px;
+}
+
+
+h3{
+    position: absolute;
+    margin-bottom: 32px;
+    max-width: 152px;
+    font-size: 22px;
+    line-height: 1.2;
+    z-index: 10;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color:var(--color-primary-white);/// change color after fixing
+}
+ 
+.pocedures-nav-btn{
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 50%;
+    display: none;
+    @media screen and (min-width:$bp-mobile) {
+        display: block;
+        
+    }
+
+}
+.swiper-button-prev{
+    bottom: 50%;
+    left: 0;
+
+}
+.swiper-button-prev, .swiper-button-next {
+    pointer-events: all;
+}
+
+.swiper-button-next{
+    bottom: 0;
+    transform: rotate(180deg);
+    right: 0;
+}
+}
+.swiper-button-prev::after,
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-next::after{
+    display: none;
+}
