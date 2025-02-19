@@ -142,7 +142,7 @@ header {
   padding: 124px 0;
   background-position: right top;
   text-align: center;
-  background-image: url("/img/hero-background.png");
+  background-image: url("./img/hero-background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
