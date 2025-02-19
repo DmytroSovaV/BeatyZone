@@ -142,7 +142,7 @@ header {
   padding: 124px 0;
   background-position: right top;
   text-align: center;
-  background-image: url("./img/hero-background.png");
+  background-image: url("/img/hero-background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -263,7 +263,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(to bottom, rgba(43, 127, 255, 0.2), rgba(43, 127, 255, 0), rgba(43, 127, 255, 0));
-  background-image: url(./img/background-advantages.png);
+  background-image: url("/img/background-advantages.png");
 }
 @media screen and (min-width: 768px) {
   .section-advantages {
@@ -517,7 +517,7 @@ header {
   left: 0;
   width: 95%;
   height: 94%;
-  background-image: url(/img/form-background.png);
+  background-image: url("/img/form-background.png");
 }
 .section-contacts__form input {
   display: block;
@@ -595,7 +595,7 @@ input:focus {
   top: 0;
   left: 0;
   z-index: -1;
-  background-image: url("./img/footer-background.png");
+  background-image: url("/img/footer-background.png");
   background-position: center;
 }
 .footer ::after {
@@ -607,7 +607,7 @@ input:focus {
   height: 213px;
   background-repeat: no-repeat;
   z-index: -1;
-  background-image: url("./img/footer-decor-element.png");
+  background-image: url("/img/footer-decor-element.png");
 }
 .footer__container {
   display: flex;
