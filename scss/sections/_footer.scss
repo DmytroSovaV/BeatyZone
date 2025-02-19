@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    background-image: url(/img/footer-background.png);
+    background-image: url(./img/footer-background.png);
     background-position: center;
 }
 ::after{
@@ -24,7 +24,7 @@
     height: 213px;
     background-repeat: no-repeat;
     z-index: -1;
-    background-image: url(/img/footer-decor-element.png);
+    background-image: url(./img/footer-decor-element.png);
 }
 &__container{
     display: flex;
