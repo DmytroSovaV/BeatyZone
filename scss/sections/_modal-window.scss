@@ -1,0 +1,85 @@
+.backdrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 20px 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 10;
+}
+
+.backdrop 
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.modal{
+    position: relative;
+    padding: 42px 60px;
+    border-radius: 48px;
+    max-width: 320px;
+    @media screen and ( min-width:$bp-tablet) {
+        padding: 42px 144px;
+        
+    }
+    z-index: 1;
+    background-color: var(--color-primary-dark-blue);
+
+h2,h3{
+        color: var(--color-primary-white);
+        max-width: 274px;
+        line-height: 1.1;
+        font-size: 18px;
+        @media screen and (min-width:$bp-tablet) {
+            font-size: 24px
+        }
+    }
+}
+.modal::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 94%;
+    z-index: -1;
+    background-image: url("../img/form-background.png");
+}
+.button-close{
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 15px;
+    @media screen and(min-width:$bp-tablet) {
+        top: 50px;
+        right: 50px;
+    }
+    background-color: transparent;
+    border: none;
+}
+.button-close:hover svg{
+    transform:rotate(360deg);
+    transition: transform 0.8s ease-in;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+
+
+

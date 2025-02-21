@@ -76,7 +76,7 @@
             <div class="container">
                     <p>Косметологічна клініка</p>
                     <h1 class="section-hero__title title brand-color">beauty zone</h1>
-                    <button class="button cta">Замовити дзвінок</button>
+                    <button class="button cta modal-btn-open">Замовити дзвінок</button>
                     <p class="section-hero__button-description">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
             </div>
         </section>
@@ -165,7 +165,7 @@
                                 style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="section-contacts__form">
+                        <div class="form">
                             <form name="Contact-form BeautyZone">
                                 <h3 class="title">
                                     Запишіться 
@@ -186,7 +186,7 @@
                                 <button type="submit" class="button form-button">Записатись безкоштовно</button>
                                 <p class="section-contacts__terms-and-conditions">
                                     Натискаючи на кнопку я погоджуюсь 
-                                    <span>
+                                    <span class="politic-data">
                                         <a href="#">з політикою конфіденційності</a>
                                     </span>
                                 </p>
@@ -250,7 +250,44 @@
             </div>
         </div>
     </footer>
+   <div class="backdrop is-hidden">
+       <div class="modal">
+            <button class="button-close modal-btn-close">
+                <svg width="24" height="24">
+                    <use href="./img/sprite.svg#icon-icon-close"></use>
+                </svg>
+            </button>
+            <form name="Contact-form BeautyZone">
+                <h2>Замовити дзвінок</h2>
+                <h3 class="title">
+                    Запишіться
+                    <span class="brand-color">
+                        безкоштовно
+                    </span>
+                    та отримайте подарунок
+                </h3>
+                <label class="visually-hiden" for="name">Name</label>
+                <input required type="text" id="name" placeholder="Ваше ім'я та прізвище">
+                
+                <label class="visually-hiden" for="tel">tel</label>
+                <input required type="tel" id="tel" placeholder="Ваш номер телефону">
+                
+                <label class="visually-hiden" for="mail">mail</label>
+                <input required type="email" id="mail" placeholder="Ваша електронна пошта">
+                
+                <button type="submit" class="button form-button">Записатись безкоштовно</button>
+                <p class="section-contacts__terms-and-conditions">
+                    Натискаючи на кнопку я погоджуюсь
+                    <span>
+                        <a href="#">з політикою конфіденційності</a>
+                    </span>
+                </p>
+            </form>
+            
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/procedures-swiper.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
