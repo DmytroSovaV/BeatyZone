@@ -697,7 +697,6 @@ svg:hover {
   position: relative;
   padding: 42px 60px;
   border-radius: 48px;
-  max-width: 320px;
   z-index: 1;
   background-color: var(--color-primary-dark-blue);
 }
