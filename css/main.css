@@ -704,6 +704,7 @@ svg:hover {
 @media screen and (min-width: 768px) {
   .modal {
     padding: 42px 144px;
+    max-width: 723px;
   }
 }
 .modal h2, .modal h3 {
