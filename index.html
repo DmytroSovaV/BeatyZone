@@ -34,10 +34,51 @@
                     <a href="./index.html">
                         <img src="./img/logo.svg" alt="logo BeautyZone">
                     </a>
-                    <div class="burger-menu">
+                    <button class="burger-menu menu-btn-open">
                         <svg width="24" height="24">
                             <use href="./img/sprite.svg#icon-menu"></use>
                         </svg>
+                    </button>
+                    <div class="mobile-menu">
+                        <button type="button" class="menu-btn-close mobile-btn-close">
+                            <svg width="24" height="24">
+                                <use href="./img/sprite.svg#icon-mobile-close"></use>
+                            </svg>
+                        </button>
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="./img/logo.svg" alt="logo BeautyZone">
+                            </a>
+                        </div>
+                        <ul class="mobile-menu__links">
+                            <li><a href="#about-us">Про нас</a></li>
+                            <li><a href="#why-we-better">Чому ми</a></li>
+                            <li><a href="#">Наші процедури</a></li>
+                            <li><a href="#">Контакти</a></li>
+                        </ul>
+                        <ul class="mobile-menu__socials">
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use href="./img/sprite.svg#icon-tel-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use href="./img/sprite.svg#icon-fb-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="32" height="32">
+                                        <use href="./img/sprite.svg#icon-inst-icon"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <ul class="header-container__menu">
                         <li><a href="#about-us">Про нас</a></li>
@@ -289,5 +330,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/procedures-swiper.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/burger-menu.js"></script>
 </body>
 </html>

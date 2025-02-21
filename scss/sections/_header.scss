@@ -11,6 +11,8 @@ header{
 
 .burger-menu{
     display: block;
+    background-color: transparent;
+    border: none;
     fill: var(--color-primary-white);
     @media screen and (min-width:$bp-tablet) {
         display: none;
